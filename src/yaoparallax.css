@@ -1,0 +1,36 @@
+.parallax-wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    will-change: transform;
+    transform: translate3d(0,0,0);
+}
+
+.parallax-image-smooth {
+    transition: transform 0.6s cubic-bezier(0,0,0,1);
+}
+
+.parallax-image-fixed {
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.parallax-measurer {
+    height: 100vh;
+    width: 0px;
+    z-index: -999;
+    position: absolute;
+    top: -100vh;
+    left: -1px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "yaoparallax",
+  "version": "0.1.0",
+  "description": "parallax scrolling plugin",
+  "main": "yaoparallax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/takvol/yaoparallax.git"
+  },
+  "keywords": [
+    "parallax",
+    "scroll"
+  ],
+  "author": "takvol",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/takvol/yaoparallax/issues"
+  },
+  "homepage": "https://github.com/takvol/yaoparallax#readme"
+}
