@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yet Another One Parallax</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="src/yaoparallax.css">
+
+    <script src="src/yaoparallax.js"></script>
+    <script>
+        window.addEventListener('load', function(){
+            yaoParallax({viewport: document.getElementById('myview'),preventMobile:true});
+        });
+    </script>
+</head>
+<body>
+<div class="viewport" id="myview">
+    <section class="section-photo">
+        <div class="photo">
+            <div class="photo-container" data-image="img/nathan-anderson-371782-unsplash.jpg" data-parallax="0.6"></div>
+            <div class="caption caption-right">
+                <a href="https://unsplash.com/@nathananderson?utm_medium=referral&amp;utm_campaign=photographer-credit" target="_blank" rel="noopener noreferrer" title="Download free photos from Nathan Anderson">Photo by Nathan Anderson</a>
+            </div>
+        </div>
+        <div class="heading">
+            <h1>Yet <span class="text-line">Another One</span> Parallax</h1>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div>
+            <h1 class="version">v. 0.0.1 dev</h1>
+            <h1>Usage</h1>
+            <h3>Include plugin files</h3>
+            <div class="code">
+                <span>&lt;link rel="stylesheet" type="text/css" href="yaoparallax/yaoparallax.css"&gt;</span><br/>
+                <span>&lt;script src="yaoparallax/yaoparallax.js"&gt;&lt;/script&gt;</span>
+            </div>
+
+            <h3>Configure parallax containers</h3>
+            <p>Create containers and style them as you need (set size, position, etc.). Specify image and parallax rate with <span class="snippet">data-image</span> and <span class="snippet">data-parallax</span> attributes.</p>
+            <div class="code">
+                &lt;div data-image="catdog.jpg" data-parallax="0.6"&gt;&lt;/div&gt;
+            </div>
+            <h3>Call yaoParallax</h3>
+            <p>(When the page is loaded.)</p>
+            <div class="code">
+                &lt;script&gt;window.addEventListener('load', yaoParallax);&lt;/script&gt;
+            </div>
+        </div>
+    </section>
+
+    <section id="compare" class="section-photo">
+        <div class="photo">
+            <div class="photo-container" data-image="img/kalen-emsley-98264-unsplash.jpg" data-parallax="-0.5"></div>
+            <div class="caption caption-left">-0.5 parallax</div>
+        </div>
+        <div class="photo">
+            <div class="photo-container" data-image="img/kalen-emsley-98264-unsplash.jpg" data-parallax="0.5"></div>
+            <div class="caption caption-left">0.5 parallax</div>
+        </div>
+        <div class="photo">
+            <div class="photo-container" data-image="img/kalen-emsley-98264-unsplash.jpg" data-parallax="1.5"></div>
+            <div class="caption caption-left">1.5 parallax</div>
+            <div class="caption caption-right">Photo by Kalen Emsley</div>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <h1>How it works</h1>
+        <p>Background size is calculated automaticaly. If parallax container position or height changes over time (e.g. elements added or removed somewhere) just call yaoParallax() to initialize it again.</p>
+
+        <h3>TODO?</h3>
+        <p>Create fork using CSS <span class="snippet">translateZ</span> and <span class="snippet">perspective</span> technick. Maybe...</p>
+    </section>
+
+    <section class="section-photo">
+        <div class="photo">
+            <div class="photo-container" data-image="img/nathan-anderson-472389-unsplash.jpg" data-parallax="0.3"></div>
+            <div class="caption caption-right">
+                <a href="https://unsplash.com/@nathananderson?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free photos from Nathan Anderson">Photo by Nathan Anderson</a>
+            </div>
+        </div>
+        <div class="heading">
+            <a class="block-link" href="https://github.com/takvol/yaoparallax">View on GitHub</a>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@media (max-width:632px) {
+    .heading h1 {
+        font-size: 1.6em;
+        margin: 1.6em;
+    }
+
+    .block-link {
+        font-size: 1.3em;
+    }
+
+    #compare > div {
+        display: none;
+    }
+
+    #compare > div:last-child {
+        display: block;
+    }
+
+}

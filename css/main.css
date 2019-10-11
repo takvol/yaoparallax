@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    position: relative;
+    color: #222;
+    background: #fffefa;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    white-space: normal;
+    word-break: break-word;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+section p {
+    text-align: justify;
+}
+
+section h3 {
+    margin: 10px 0;
+}
+
+.viewport {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.section-content {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.section-photo {
+    height: 320px;
+}
+
+#compare {
+    display: flex;
+}
+
+#compare > div {
+    flex: auto;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    color: #fffefa;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.heading h1 {
+    padding: 15px;
+    background: #a799713d;
+    font-size: 2.3em;
+}
+
+.block-link {
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.block-link:hover {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.photo {
+    position: relative;
+}
+
+.photo,
+.photo-container {
+    height: 100%;
+    width: 100%;
+}
+
+.code,
+.snippet {
+    background: #eee;
+    font-family: monospace;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.code {
+    padding: 15px;
+    margin: 15px;
+    border-left: 4px solid #5f9ea0;
+    overflow: auto;
+}
+
+.snippet {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.text-line {
+    white-space: nowrap;
+}
+
+.caption {
+    position: absolute;
+    bottom: 2px;
+    color: #fffefa;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.caption-right {
+    right: 2px;
+}
+
+.caption-left {
+    left: 2px;
+    right: auto;
+}
+
+.caption a,
+.heading a {
+    color: #fffefa;
+    text-decoration: none;
+}
+
+.caption a {
+    padding: 0 2px;
+}
+
+.caption a:hover {
+    background: rgba(167, 153, 113, 0.24);
+}
+
+.version {
+    float: right;
+}
